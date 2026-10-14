@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TH02-quanLyChiTieu</string>
+    <string-array name="categories_array">
+        <item>Ăn uống</item>
+        <item>Đi lại</item>
+        <item>Học tập</item>
+        <item>Giải trí</item>
+        <item>Khác</item>
+    </string-array>
+</resources>

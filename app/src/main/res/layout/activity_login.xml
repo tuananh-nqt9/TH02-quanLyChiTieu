@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quản lý chi tiêu"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đăng nhập để tiếp tục"
+        android:textSize="16sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên đăng nhập"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        android:textColor="#212121"
+        android:layout_marginBottom="12dp"
+        android:paddingHorizontal="16dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <!-- Thông báo lỗi khi đăng nhập sai -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sai tên đăng nhập hoặc mật khẩu"
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Đăng nhập"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_rounded"
+        app:backgroundTint="@null"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#9E9E9E"
+        android:text="Tài khoản mẫu: admin / 123456"/>
+</LinearLayout>

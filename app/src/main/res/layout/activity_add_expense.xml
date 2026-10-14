@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    android:paddingBottom="24dp"
+    android:paddingTop="56dp"
+    android:background="#F5F7FA">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thêm khoản chi mới"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#1E88E5"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/edtAddName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Tên khoản chi (Ví dụ: Ăn trưa)"
+        android:textColor="#212121"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <EditText
+        android:id="@+id/edtAddAmount"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Số tiền (VNĐ)"
+        android:inputType="numberDecimal"
+        android:textColor="#212121"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <Spinner
+        android:id="@+id/spCategory"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_item_rounded"
+        android:entries="@array/categories_array"/>
+
+    <TextView
+        android:id="@+id/tvAddDate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Chọn ngày"
+        android:paddingHorizontal="16dp"
+        android:gravity="center_vertical"
+        android:textColor="#212121"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <EditText
+        android:id="@+id/edtAddNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="100dp"
+        android:hint="Ghi chú thêm..."
+        android:inputType="textMultiLine"
+        android:textColor="#212121"
+        android:lines="3"
+        android:gravity="top|left"
+        android:padding="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bg_item_rounded"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnSaveExpense"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Lưu khoản chi"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_rounded"
+        app:backgroundTint="@null"
+        android:textColor="@android:color/white"/>
+</LinearLayout>
